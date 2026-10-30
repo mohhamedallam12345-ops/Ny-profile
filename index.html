@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENG. Mohammed Allam</title>
     <link
-
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -31,7 +30,7 @@
       body {
         background: var(--bg);
         color: var(--text);
-        font-family: "Cairo", sans-serif;
+        font-family: "Inter", sans-serif;
         min-height: 100vh;
         padding: 32px 16px 52px;
       }
@@ -128,19 +127,21 @@
         line-height: 1.2;
         letter-spacing: 0.3px;
       }
-      .hero-title-ar {
+      .hero-title-main {
         font-size: 12px;
+        font-weight: 600;
         color: var(--muted);
         letter-spacing: 0.5px;
-        margin-top: 3px;
+        margin-top: 4px;
       }
-      .hero-title-en {
-        font-family: "Inter", sans-serif;
+      .hero-title-sub {
         font-size: 10px;
-        color: #444;
+        font-weight: 600;
+        color: var(--gold);
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        margin-top: 1px;
+        margin-top: 3px;
+        opacity: 0.85;
       }
 
       .section {
@@ -182,11 +183,11 @@
       }
       .stripe {
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
         bottom: 0;
         width: 3px;
-        border-radius: 0 3px 3px 0;
+        border-radius: 3px 0 0 3px;
       }
       .row-icon {
         width: 42px;
@@ -210,7 +211,7 @@
         font-size: 11px;
         color: var(--muted);
         direction: ltr;
-        text-align: right;
+        text-align: left;
         margin-top: 2px;
         font-family: "Inter", monospace;
         letter-spacing: 0.5px;
@@ -250,14 +251,6 @@
         color: var(--muted);
         line-height: 1.7;
       }
-      .qr-hint span {
-        color: var(--gold);
-        font-weight: 600;
-        font-size: 11px;
-        direction: ltr;
-        display: block;
-        margin-top: 4px;
-      }
 
       #toast {
         position: fixed;
@@ -266,7 +259,7 @@
         transform: translateX(-50%) translateY(20px);
         background: var(--gold);
         color: #000;
-        font-family: "Cairo", sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 13px;
         font-weight: 700;
         padding: 10px 24px;
@@ -288,8 +281,9 @@
         text-align: center;
         padding-top: 10px;
         color: #2a2a2a;
-        font-size: 11px;
+        font-size: 10px;
         letter-spacing: 1.5px;
+        text-transform: uppercase;
       }
     </style>
   </head>
@@ -314,14 +308,14 @@
           </div>
           <div class="hero-text">
             <div class="hero-name">ENG. Mohammed Allam</div>
-            <div class="hero-title-ar">مهندس برمجيات</div>
-            <div class="hero-title-en">Software Engineer</div>
+            <div class="hero-title-main">Software Engineer</div>
+            <div class="hero-title-sub">Real Estate Sales</div>
           </div>
         </div>
       </div>
 
       <div class="section">
-        <div class="section-label">التواصل الاجتماعي</div>
+        <div class="section-label">Social Media</div>
         <a
           class="row"
           href="https://www.instagram.com/m.allam123?igsh=YWs2Y2ZjcmUxcHlx"
@@ -339,7 +333,7 @@
             📸
           </div>
           <div class="row-info">
-            <div class="row-title">انستجرام</div>
+            <div class="row-title">Instagram</div>
             <div class="row-sub">@m.allam123</div>
           </div>
           <div class="arr">›</div>
@@ -347,7 +341,7 @@
       </div>
 
       <div class="section">
-        <div class="section-label">التواصل المباشر</div>
+        <div class="section-label">Direct Contact</div>
         <a
           class="row"
           href="https://wa.me/201551044900"
@@ -365,7 +359,7 @@
             💬
           </div>
           <div class="row-info">
-            <div class="row-title">واتساب</div>
+            <div class="row-title">WhatsApp</div>
             <div class="row-sub">+20 155 104 4900</div>
           </div>
           <div class="arr">›</div>
@@ -382,7 +376,7 @@
             📱
           </div>
           <div class="row-info">
-            <div class="row-title">الرقم الشخصي</div>
+            <div class="row-title">Personal Phone</div>
             <div class="row-sub">+20 155 104 4900</div>
           </div>
           <div class="arr">›</div>
@@ -399,7 +393,7 @@
             ☎️
           </div>
           <div class="row-info">
-            <div class="row-title">رقم الشغل</div>
+            <div class="row-title">Work Phone</div>
             <div class="row-sub">+20 102 768 1282</div>
           </div>
           <div class="arr">›</div>
@@ -407,7 +401,7 @@
       </div>
 
       <div class="section">
-        <div class="section-label">وسائل الدفع والتحويل</div>
+        <div class="section-label">Payment Methods</div>
         <a
           class="row"
           href="https://ipn.eg/S/mohammedallam123/instapay/01XyyT"
@@ -424,7 +418,7 @@
             💳
           </div>
           <div class="row-info">
-            <div class="row-title">انستا باي</div>
+            <div class="row-title">InstaPay</div>
             <div class="row-sub">mohammedallam123@instapay</div>
           </div>
           <div class="arr">›</div>
@@ -442,7 +436,7 @@
             🔴
           </div>
           <div class="row-info">
-            <div class="row-title">فودافون كاش</div>
+            <div class="row-title">Vodafone Cash</div>
             <div class="row-sub">01027681282</div>
           </div>
           <div class="arr">›</div>
@@ -460,7 +454,7 @@
             🔵
           </div>
           <div class="row-info">
-            <div class="row-title">WE باي</div>
+            <div class="row-title">WE Pay</div>
             <div class="row-sub">01551044900</div>
           </div>
           <div class="arr">›</div>
@@ -468,22 +462,21 @@
       </div>
 
       <div class="qr-card">
-        <div class="qr-title">✦ امسح الكود لفتح صفحتي ✦</div>
+        <div class="qr-title">✦ Scan to Open My Profile ✦</div>
         <div class="qr-box" id="myqr"></div>
-        <div class="qr-hint">
-          امسح بكاميرا موبايلك
-          <span>https://dynamic-hotteok-ebb067.netlify.app</span>
-        </div>
+        <div class="qr-hint">Scan with your phone camera</div>
       </div>
 
-      <footer>ENG. MOHAMMED ALLAM &nbsp;✦&nbsp; SOFTWARE ENGINEER</footer>
+      <footer>
+        ENG. MOHAMMED ALLAM &nbsp;✦&nbsp; SOFTWARE ENGINEER &amp; REAL ESTATE SALES
+      </footer>
     </div>
 
     <div id="toast"></div>
 
     <script>
       new QRCode(document.getElementById("myqr"), {
-        text: "https://dynamic-hotteok-ebb067.netlify.app",
+        text: window.location.href,
         width: 200,
         height: 200,
         colorDark: "#000000",
@@ -496,7 +489,7 @@
           navigator.clipboard
             .writeText("mohammedallam123@instapay")
             .then(function () {
-              showToast("تم نسخ mohammedallam123@instapay ✓");
+              showToast("Copied mohammedallam123@instapay ✓");
             })
             .catch(function () {});
         }
